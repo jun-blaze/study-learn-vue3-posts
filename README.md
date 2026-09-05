@@ -1,35 +1,36 @@
-# study-learn-vue3-posts
+# Vue 3 Posts Practice
 
-This template should help get you started developing with Vue 3 in Vite.
+Vue 3와 Vue Router로 게시글 화면 구조와 SPA 라우팅을 연습하는 프런트엔드 학습 프로젝트다.
 
-## Recommended IDE Setup
+## 기술 구성
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin).
+| 영역 | 기술 |
+|---|---|
+| UI | Vue 3, Bootstrap, Bootstrap Icons |
+| 개발 서버·빌드 | Vite |
+| 코드 품질 | ESLint, Prettier |
 
-## Customize configuration
+## 구조
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+| 경로 | 내용 |
+|---|---|
+| `src/layouts/` | 공통 헤더와 화면 레이아웃 |
+| `src/views/` | 홈과 소개 화면 |
+| `src/router/` | 클라이언트 라우팅 설정 |
+| `src/assets/` | 공통 스타일과 이미지 |
 
-## Project Setup
+## 실행
 
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
+```bash
+npm ci
 npm run dev
 ```
 
-### Compile and Minify for Production
+## 검증
 
-```sh
+```bash
+npm run lint
 npm run build
 ```
 
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+백엔드 연동보다 Vue 애플리케이션의 기본 구조와 화면 전환 학습에 초점을 둔다.
